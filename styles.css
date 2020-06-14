@@ -1,0 +1,152 @@
+body {
+  background-color:#d1ebe6;
+}
+image{
+  text-align:center;
+  
+}
+img{
+  border-radius: 10px;
+  max-width:100%;
+  align: center;
+  position:relative;
+  top:10px;
+}
+#title{
+  color:#cfe7fa;
+  font-family: monospace;
+  font-size:50px;
+  text-align: center;
+  background-color: #2b9481;
+  border-radius:15px;
+  margin: 20px;
+}
+#img-div{
+  background-color:#2b9481;
+  color: #cfe7fa;
+  border-radius:15px;
+  text-align: center;
+  margin: 20px;
+}
+#img-caption{
+  color:#cfe7fa;
+  text-align:center;
+  font-family: monospace;
+  font-size: 16px;
+}
+#bands{
+  color:#cfe7fa;
+  background-color:#2b9481;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius:15px;
+  margin:20px;
+  padding: 20px;
+}
+#Hybrid-theory{
+  background-color: #2b9481;
+  color:#cfe7fa;
+  text-align:left;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius:15px;
+  margin:20px;
+  padding: 20px;
+  height: 265px;
+}
+a{
+  color:#cfe7fa;
+}
+a:hover{
+  color:blue;
+}
+#hyb-img{
+    position:absolute;
+  left: 1150px;
+  top: 820px;
+  }
+#Meteora{
+  text-align: right;
+  background-color: #2b9481;
+  color:#cfe7fa;
+  text-align:left;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius:15px;
+  margin:20px;
+  padding: 20px;
+  height: 265px;
+}
+#met-img{
+  position:absolute;
+  top:1170px;
+  left:100px;
+  width: 300px;
+  height: auto;
+  display:block;
+}
+#Minutes-to-midnight{
+  background-color: #2b9481;
+  color:#cfe7fa;
+  text-align:left;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius:15px;
+  margin:20px;
+  padding: 20px;
+  height: 265px;
+}
+#mid-img{
+  width:17%;
+  height: auto;
+  position: absolute;
+  left: 1150px;
+  top: 1485px;
+}
+#A-thousand-suns{
+   text-align: right;
+  background-color: #2b9481;
+  color:#cfe7fa;
+  text-align:left;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius:15px;
+  margin:20px;
+  padding: 20px;
+  height: 265px;
+}
+#thous-img{
+    position:absolute;
+  top:1840px;
+  left:100px;
+  width: 350px;
+  height: auto;
+  display:block;
+}
+#One-more-light{
+  background-color: #2b9481;
+  color:#cfe7fa;
+  text-align:left;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius:15px;
+  margin:20px;
+  padding: 20px;
+  height: 265px;
+}
+#one-img{
+  width:23%;
+  height: auto;
+  position: absolute;
+  left: 1050px;
+  top: 2185px;
+}
+#epilogue{
+  color:#cfe7fa;
+  font-family: monospace;
+  font-size:30px;
+  text-align: center;
+  background-color: #2b9481;
+  border-radius:15px;
+  margin: 20px;
+}
