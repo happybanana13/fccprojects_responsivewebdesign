@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <div id="head">
+    <h1 id="title"><u>Dota 2 Rank Distribution Survey</u></h1>
+    <p id="description"><i>Survey to understand rank distribution of dota players.</i><p>
+  </div>
+  
+  <div id="main">
+    <form id="survey-form">
+      <br>
+      <label id="name-label"for="name">Enter your name:</label><br>
+      <input type="text" placeholder="Enter your name" id="name" name="name"      required><br><br>
+      <label id="email-label"for="email">Enter your Email:</label><br>
+      <input type="email" placeholder="Enter your Email" id="email" name="email" required><br><br>
+      <label id="number-label"type="number">Enter your number:</label><br>
+      <input min="000000000" max="999999999" type="number" placeholder="Enter your registered mobile number" id="number" name="number" pattern="\d*" required><br><br>
+      <label for="dropdown">Rank</label><br>
+    <select id="dropdown" name="dropdown">
+      <option value="Herald">Herald</option>
+      <option value="Guardian">Guardian</option>
+      <option value="Crusader">Crusader</option>
+      <option value="Archon">Archon</option>
+      <option value="Legend">Legend</option>
+      <option value="Ancient">Ancient</option>
+      <option value="Divine">Divine</option>
+      <option value="Immortal">Immortal</option>
+    </select>
+      <p>Which role you play?</p>
+      <input type="checkbox" id="carry" name="role" value="carry">
+  <label for="carry"> Carry</label><br>
+  <input type="checkbox" id="support" name="role" value="role">
+  <label for="vehicle2"> Support</label><br><br>
+      
+      <p>Which position do you play?</p>
+       <input type="radio" id="pos1" name="pos" value="pos1">
+       <label for="pos1">Position1/Safe lane</label><br>
+       <input type="radio" id="pos2" name="pos" value="pos2">
+       <label for="pos2">Position2/Mid lane</label><br>
+       <input type="radio" id="pos3" name="pos" value="pos3">
+       <label for="pos3">Position3/Off lane</label><br>
+       <input type="radio" id="pos4" name="pos" value="pos4">
+       <label for="pos4">Position4/Soft support</label><br>
+       <input type="radio" id="pos5" name="pos" value="pos5">
+       <label for="pos5">Position5/Hard support</label><br><br>
+      
+      <p>Which hero do you think should be nerfed?</p><br>
+      <label for="text-area"></label>
+<textarea id="text-area" name="text-area" rows="4" cols="50">
+  </textarea><br><br>
+      <input id="submit" type="submit" value="Submit">
+       
+      
+    </form>  
+      
+      </div>  
+</main>
+</body>
+</html>
