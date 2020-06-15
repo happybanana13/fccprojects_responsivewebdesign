@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="styles_documentation.css">
+</head>
+<nav id="navbar">
+  <ul>
+    <header id="desc">C++ Tutorial</header>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+    <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+    <li><a class="nav-link" href="#Classes_and_objects">Classes and objects</a></li>
+    <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <div id="main-page">
+    <section class = "main-section" id="Introduction">
+      <header class="heading">Introduction</header>
+        <div class="content">
+      <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This C++ tutorial adopts a simple and practical approach to describe the concepts of C++ for beginners to advanded software engineers.</p>
+          <p>Why to Learn C++</p>
+          <ol>
+            <li>C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, better performance and finally a robust software development.</li>
+            <li>C++ programming gives you a clear understanding about Object Oriented Programming. You will understand low level implementation of polymorphism when you will implement virtual tables and virtual table pointers, or dynamic type identification.</li>
+            <li>C++ is one of the every green programming languages and loved by millions of software developers. If you are a great C++ programmer then you will never sit without work and more importantly you will get highly paid for your work.</li>
+            <li>C++ is the most widely used programming languages in application and system programming. So you can choose your area of interest of software development.</li>
+            <li>C++ really teaches you the difference between compiler, linker and loader, different data types, storage classes, variable types their scopes etc.</li>
+          </ol>
+      </div>
+    </section>
+    <section class = "main-section" id="Syntax">
+      <header class="heading">Syntax</header>
+       <div class="content">
+         <p>When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what a class, object, methods, and instant variables mean.</p>
+         <ol>
+           <li><b>Object</b> − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors - wagging, barking, eating. An object is an instance of a class.</li>
+           <li><b>Class</b> − A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.</li>
+           <li><b>Methods</b> − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</li>
+           <li><b>Instance Variables</b> − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</li>
+         </ol>
+         <p><b>C++ Program Structure</b><br>Let us look at a simple code that would print the words Hello World.</p>
+         <div class = "code">
+           <pre><code>
+   #include <iostream>
+   using namespace std; // main() is where program execution begins.
+   int main() {
+   cout << "Hello World"; // prints Hello World
+   return 0;
+   }
+   </code></pre>
+           </div>
+      </div>
+    </section>
+    <section class = "main-section" id="Arrays">
+      <header class="heading">Arrays</header>
+       <div class="content">
+         <p>C++ provides a data structure, the array, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.<br><br>
+
+Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index.<br><br>
+
+All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.</p>
+         <p><b>Declaring Arrays</b><br><br>To declare an array in C++, the programmer specifies the type of the elements and the number of elements required by an array as follows −</p>
+         <div class="code">
+           <pre><code>  type arrayName [ arraySize ];  </code></pre>
+         </div>
+         <p>This is called a single-dimension array. The arraySize must be an integer constant greater than zero and type can be any valid C++ data type. For example, to declare a 10-element array called balance of type double, use this statement −</p>
+         <div class="code">
+           <pre><code>  double balance[10];  </code></pre>
+         </div>
+         <p><b>Initializing Arrays</b><br>You can initialize C++ array elements either one by one or using a single statement as follows −</p>
+         <div class="code">
+           <pre><code>  double balance[5] = {1000.0, 2.0, 3.4, 17.0, 50.0};  </code></pre>
+         </div>
+         <p><b>Accessing Array Elements</b><br>An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example −</p>
+         <div class="code">
+           <pre><code>  double salary = balance[9];  </code></pre>
+         </div>
+      </div>
+    </section>
+    <section class = "main-section" id="Classes_and_objects">
+       <header class="heading">Classes and objects</header>
+        <div class="content">
+          <p>The main purpose of C++ programming is to add object orientation to the C programming language and classes are the central feature of C++ that supports object-oriented programming and are often called user-defined types.<br><br>
+
+A class is used to specify the form of an object and it combines data representation and methods for manipulating that data into one neat package. The data and functions within a class are called members of the class.<br><br><b>C++ Class Definitions</b><br><br>When you define a class, you define a blueprint for a data type. This doesn't actually define any data, but it does define what the class name means, that is, what an object of the class will consist of and what operations can be performed on such an object.<br><br>
+
+A class definition starts with the keyword class followed by the class name; and the class body, enclosed by a pair of curly braces. A class definition must be followed either by a semicolon or a list of declarations. For example, we defined the Box data type using the keyword class as follows −</p>
+          <div class="code">
+           <pre><code>  class Box {
+           public:
+      double length;   // Length of a box
+      double breadth;  // Breadth of a box
+      double height;   // Height of a box
+  };  </code></pre>
+         </div>
+          <p>The keyword public determines the access attributes of the members of the class that follows it. A public member can be accessed from outside the class anywhere within the scope of the class object. You can also specify the members of a class as private or protected which we will discuss in a sub-section.<br><br><b>Define C++ Objects</b><br><br>A class provides the blueprints for objects, so basically an object is created from a class. We declare objects of a class with exactly the same sort of declaration that we declare variables of basic types. Following statements declare two objects of class Box −
+            <div class="code">
+           <pre><code>  Box Box1;          // Declare Box1 of type Box
+  Box Box2;          // Declare Box2 of type Box</code></pre>
+         </div>
+  </div>
+  </section>
+    <section class = "main-section" id="Inheritance">
+      <header class="heading">Inheritance</header>
+        <div class="content">
+          <p>One of the most important concepts in object-oriented programming is that of inheritance. Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse the code functionality and fast implementation time.<br><br>
+
+When creating a class, instead of writing completely new data members and member functions, the programmer can designate that the new class should inherit the members of an existing class. This existing class is called the base class, and the new class is referred to as the derived class.<br><br>
+
+The idea of inheritance implements the is a relationship. For example, mammal IS-A animal, dog IS-A mammal hence dog IS-A animal as well and so on.<br><br><b>Base and Derived Classes</b><br><br>A class can be derived from more than one classes, which means it can inherit data and functions from multiple base classes. To define a derived class, we use a class derivation list to specify the base class(es). A class derivation list names one or more base classes and has the form −<br><p>
+          <div class="code">
+           <pre><code>  class derived-class: access-specifier base-class  </code></pre>
+         </div>
+          <p>Where access-specifier is one of public, protected, or private, and base-class is the name of a previously defined class. If the access-specifier is not used, then it is private by default.</p><br><br>
+        </div>
+    </section>  
+  </div>   
+</main>
+</html>
